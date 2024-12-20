@@ -1,0 +1,32 @@
+// 変数定義
+$ff-sans: "Noto Sans JP", sans-serif;
+$ff-serif: "Noto Serif JP", serif;
+$ff-gothic:"YuGothic","Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",$ff-sans;
+$ff-mincho:"游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", $ff-serif;
+$ff-allura:"Allura", serif;
+$ff-anaheim:"Anaheim", serif;
+$ff-source-han:"source-han-sans-japanese", sans-serif;
+
+$c-main :#000000;
+$c-green: #2fb6c2;
+$c-yellow:#f8f253;
+$c-green2:#45d28c;
+$c-purple:#d18ede;
+$c-blue:#1a78d6;
+$c-orange:#f18f1f;
+$c-red:#e1185d;
+$c-red2:#a50101;
+$c-pink:#fc5a9b;
+$c-gold:#c1aa6a;
+
+
+// ブレークポイント
+$breakpoints: (
+  "sp-down": "(max-width: 767px)",
+  "sp-up": "(min-width: 768px)",
+  "tab-down": "(max-width: 1024px)",
+  "tab-up": "(min-width: 1025px)",
+  "note-down": "(max-width: 1440px)",
+  "note-up": "(min-width: 1441px)",
+  "wide" : "(min-width: 1681px)"
+);
