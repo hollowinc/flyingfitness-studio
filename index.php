@@ -276,7 +276,7 @@
                     <p class="p2 p3">
                         <span>ぴったりのフィットネス！</span>
                     </p>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/feature1.webp" alt="難しいことは何もありません！">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/feature1.webp?ver2" alt="難しいことは何もありません！">
                 </li>
 
                 <li>
@@ -315,7 +315,7 @@
             </div>
             <h2>教室の様子</h2>
             <div class="flex">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/insta-img.webp" alt="Instagram画像">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/insta-img.webp?ver2" alt="Instagram画像">
             </div>
             <div class="insta-btn">
                 <a href="https://www.instagram.com/studiodotcom/" target="_blank" rel="noopener noreferrer">
@@ -722,8 +722,8 @@
             </div>
             <div class="main-img">
                 <picture>
-                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/manzoku.webp" media="(min-width: 768px)" />
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/manzoku-sp.webp" class="fv-bg" alt="">
+                    <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/manzoku.webp?ver2" media="(min-width: 768px)" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/manzoku-sp.webp?ver2" class="fv-bg" alt="">
                 </picture>
             </div>
             <div class="txt">
