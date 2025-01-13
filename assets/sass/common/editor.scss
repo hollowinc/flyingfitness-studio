@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import '../_variables';
+@import '../_mixin';
+
+#tinymce {
+  //min-width: $grid-row-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-top: rem-calc(12);
+  padding-bottom: rem-calc(12);
+  overflow: scroll;
+  margin-top: 0 !important;
+
+  @include mq('sp-down'){
+    min-width: inherit !important;
+    width: 100%;
+  }
+
+
+  &.post-type-post, //投稿画面
+  &.mce-content-body.acf_content //ACF tinyMce
+  {
+    //max-width: rem-calc(736);
+    @include l-post-content;
+  }
+
+  //コンテンツ幅調整
+  &.post-type-post {
+    //max-width: rem-calc(736);
+  }
+
+  //アコーディオン 開放
+  .js-accordion {
+    .c-accordion,
+    .c-faq__text {
+      display: block !important;
+    }
+  }
+}

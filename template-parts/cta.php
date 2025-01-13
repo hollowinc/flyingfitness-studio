@@ -8,14 +8,6 @@
         <div class="banner">
             <img src="<?php the_field('camp1-main'); ?>" alt="体験キャンペーン">
         </div>
-        <div class="big">
-            <?php the_field('camp1-txt1'); ?>
-        </div>
-        <div class="medium">
-            <?php the_field('camp1-txt2'); ?>
-        </div>
-        <div class="mini">
-            <?php the_field('camp1-txt4'); ?>
-        </div>
+        <div class="l-post-content"><?php the_field('camp1-editor'); ?></div>
     </div>
 </div>

@@ -1,18 +1,205 @@
 // メディアクエリーミックスイン
 @mixin mq($breakpoint: sp) {
-    @media #{map-get($breakpoints, $breakpoint)} {
-      @content;
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// View Width ファンクション
+$baseWidth: 1366;
+@function vw($pixelsVw) {
+  @return $pixelsVw / $baseWidth * 100vw;
+}
+
+$baseWidth2: 375;
+@function vw2($pixelsVw) {
+  @return $pixelsVw / $baseWidth2 * 100vw;
+}
+
+//l-post-content内のスタイルはすべてここに記述すること ※@extend使わない
+@mixin l-post-content {
+  display: flow-root;
+  //word-break: break-all;
+
+  > * + * { //投稿内の各ブロックの間に1emのマージンを設定
+    margin-top: 1em;
+  }
+
+  img{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  p{
+      font-size: 1.8rem;
+      line-height: normal;
+
+      span,strong,a{
+          font-size: 1em;
+      }
+  }
+
+  .is-type-video{
+      iframe{
+          width: 100%;
+          height: 100%;
+          aspect-ratio: 16 / 9;
+      }
+  }
+
+  h1{
+    font-size: 3.4rem;
+    font-weight: bold;
+    color: $c-green;
+    position: relative;
+    line-height: normal;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $c-green;
+    @include mq('sp-down'){
+      font-size: 2.4rem;
+      margin-bottom: 2rem;
     }
   }
-  
-  // View Width ファンクション
-  $baseWidth: 1366;
-  @function vw($pixelsVw) {
-    @return $pixelsVw / $baseWidth * 100vw;
+
+  h2{
+      font-size: 3rem;
+      font-weight: bold;
+      color: $c-green;
+      padding-left: 1.7rem;
+      position: relative;
+      line-height: normal;
+      margin-bottom: 2rem;
+      &::before{
+          content: "";
+          width: .5rem;
+          height: 100%;
+          position: absolute;
+          background-color: $c-green;
+          left: 0;
+          top: 0;
+      }
+      @include mq('sp-down'){
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+      }
   }
-  
-  $baseWidth2: 375;
-  @function vw2($pixelsVw) {
-    @return $pixelsVw / $baseWidth2 * 100vw;
+
+  h3{
+      font-size: 2.4rem;
+      padding-left: 4rem;
+      position: relative;
+      margin-bottom: 2rem;
+      color: $c-green;
+      line-height: normal;
+      font-weight: bold;
+      &::before{
+          content: "";
+          height: .2rem;
+          width: 3rem;
+          position: absolute;
+          top: calc(50% - .1rem);
+          left: 0;
+          background-color: $c-green;
+      }
+      @include mq('sp-down'){
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+      }
   }
-  
+
+  h4{
+      font-size: 2.2rem;
+      position: relative;
+      margin-bottom: 1.6rem;
+      color: $c-green;
+      line-height: normal;
+      font-weight: bold;
+      @include mq('sp-down'){
+        font-size: 2rem;
+        margin-bottom: 1.6rem;
+      }
+  }
+
+  h5{
+      font-size: 2rem;
+      position: relative;
+      line-height: normal;
+      margin-bottom: 1.6rem;
+      color: $c-green;
+      font-weight: bold;
+      @include mq('sp-down'){
+        font-size: 1.8rem;
+        margin-bottom: 1.6rem;
+      }
+  }
+
+  h6{
+      font-size: 1.8rem;
+      position: relative;
+      line-height: normal;
+      margin-bottom: .16rem;
+      color: $c-green;
+      font-weight: bold;
+      @include mq('sp-down'){
+        font-size: 1.6rem;
+        margin-bottom: 1.6rem;
+      }
+  }
+
+  strong{
+      font-weight: bold;
+  }
+
+  a{
+      text-decoration: underline;
+      color: blue;
+  }
+
+  ul{
+      margin-bottom: 2rem;
+      li{
+          font-size: 1.8rem;
+          line-height: normal;
+          position: relative;
+          padding-left: 1em;
+          @include mq('sp-down'){
+            font-size: 1.4rem;
+          }
+          &::before{
+              content: "・";
+              left: 0;
+              top: 0;
+              position: absolute;
+          }
+      }
+  }
+
+  ol{
+      margin-bottom: 2rem;
+      list-style-type: decimal;
+      margin-left: 2em;
+      li{
+          list-style: decimal;
+          font-size: 1.8rem;
+          line-height: normal;
+          @include mq('sp-down'){
+            font-size: 1.4rem;
+          }
+      }
+  }
+
+  iframe {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  pre {
+    background: #f5f5f5;
+    padding: rem-calc(16) rem-calc(24);
+  }
+
+  code {
+    font-family: monospace, monospace;
+    background: #f5f5f5;
+  }
+}

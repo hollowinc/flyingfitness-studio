@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Anaheim:wght@400..800&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
 @import '../_variables';
 @import '../_mixin';
-
+@import '../_post-content';
 
 
 /* リセットCSS
@@ -251,7 +251,7 @@ main{
                         transition: all .4s;
                         &:hover{
                             opacity: .7;
-                        }          
+                        }
                     }
                 }
                 .tel{
@@ -272,7 +272,7 @@ main{
                         color: white;
                     }
                     @include mq('sp-up'){
-                        pointer-events: none;        
+                        pointer-events: none;
                     }
                 }
                 .lesson{
@@ -448,7 +448,7 @@ main{
             transition: all .4s;
             &:hover{
                 opacity: .7;
-            }          
+            }
         }
     }
     p{
@@ -457,7 +457,7 @@ main{
         font-weight: bold;
         line-height: 1.25em;
         color: white;
-        
+
         letter-spacing: 0.2em;
         @include mq('sp-down'){
             font-size: 1.8rem;
@@ -472,7 +472,7 @@ main{
     .tel{
         background-color: $c-green;
         @include mq('sp-up'){
-            display: none;       
+            display: none;
         }
     }
     .mail{
@@ -489,7 +489,7 @@ main{
                 @include mq('sp-up'){
                     font-size: 1rem;
                     font-weight: bold;
-                    -webkit-text-stroke: .1rem white;                  
+                    -webkit-text-stroke: .1rem white;
                 }
             }
         }
@@ -503,7 +503,7 @@ main{
             }
         }
     }
-    
+
 }
 
 
@@ -536,14 +536,14 @@ main{
     p{
         font-size: 1.4rem;
         color: white;
-        
+
     }
 
     @include mq('sp-up'){
         transition: all .4s;
         &:hover{
             opacity: .7;
-        }      
+        }
     }
 }
 
@@ -661,11 +661,11 @@ main{
             @include mq('sp-up'){
                 &:hover{
                     top: -.2rem;
-                }              
+                }
             }
         }
     }
-    
+
 }
 
 .topics{
@@ -737,13 +737,13 @@ main{
                                 transform: scale(1.1);
                             }
                         }
-                    }                  
+                    }
                 }
 
                 .txt-wrapper{
                     padding-top: 1.2rem;
                     time{
-                    
+
                         font-size: 1.5rem;
                         font-weight: 300;
                         color: $c-green;
@@ -810,7 +810,7 @@ main{
             &:hover{
                 top: -.2rem;
                 box-shadow: .2rem .2rem .5rem lightgray;
-            }              
+            }
         }
     }
 }
@@ -963,7 +963,7 @@ main{
                     }
                     @include mq('sp-down'){
                       font-size: 1.6rem;
-                      
+
                     }
                 }
 
@@ -1057,7 +1057,7 @@ main{
                     transition: all .4s;
                     &:hover{
                         opacity: .7;
-                    }          
+                    }
                 }
                 span{
                     color: white;
@@ -1172,14 +1172,14 @@ main{
                     transition: all .4s;
                     &:hover{
                         opacity: .7;
-                    }          
+                    }
                 }
             }
             .tel{
                 padding-left: 2rem;
                 background-color: $c-green;
                 @include mq('sp-up'){
-                    pointer-events: none;       
+                    pointer-events: none;
                 }
                 img{
                     margin-right: 1.8rem;
@@ -1237,7 +1237,7 @@ main{
                 @include mq('sp-up'){
                     &:hover{
                         opacity: .7;
-                    }                  
+                    }
                 }
 
             }
@@ -1245,7 +1245,7 @@ main{
         .members{
             border-radius: 2rem;
             border: 2px solid $c-orange;
-            
+
             overflow: hidden;
             max-width: 60rem;
             margin: auto;
@@ -1307,7 +1307,7 @@ main{
                         transition: all .4s;
                         &:hover{
                             opacity: .7;
-                        }          
+                        }
                     }
                     &::after{
                         content: "";
@@ -1693,7 +1693,7 @@ main{
             text-align: center;
             font-size: 4rem;
             line-height: 2.25em;
-            
+
             font-weight: 600;
             @include mq('sp-down'){
               font-size: 2.4rem;
@@ -1774,7 +1774,7 @@ main{
                     height: 32.1rem;
                     width: auto;
                 }
-                
+
             }
         }
     }
@@ -2064,7 +2064,7 @@ main{
             .txt{
                 padding-top: 2rem;
                 padding-left: 4rem;
-                
+
                 @include mq('sp-up'){
                   width: calc(100% - 18rem);
                 }
@@ -2243,7 +2243,7 @@ main{
                         padding-left: 0;
                         padding-top: 0;
                     }
-                }              
+                }
             }
 
         }
@@ -2767,7 +2767,7 @@ main{
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: left top;
-                
+
             }
         }
         .td2{
@@ -2834,7 +2834,7 @@ main{
                 font-size: 1.6rem;
                 letter-spacing: 0.06em;
             }
-    
+
         }
         iframe{
             width: 100%;
@@ -2868,7 +2868,7 @@ main{
                 transition: all .4s;
                 &:hover{
                     opacity: .7;
-                }          
+                }
             }
         }
         .detail{
@@ -2915,7 +2915,7 @@ main{
                 }
             }
             @include mq('sp-up'){
-                pointer-events: none;        
+                pointer-events: none;
             }
         }
     }
@@ -2997,7 +2997,7 @@ main{
                 transition: all .4s;
                 &:hover{
                     opacity: .7;
-                }          
+                }
             }
             span{
                 color: white;
@@ -3044,7 +3044,7 @@ main{
                 font-size: 1.6rem;
                 padding-top: 2rem;
                 padding-bottom: 2rem;
-                
+
             }
             th{
                 font-weight: bold;
@@ -3072,7 +3072,7 @@ main{
                 @include mq('sp-down'){
                   flex-direction: column;
                   align-items: flex-start;
-                  
+
                 }
                 p{
                     font-size: 1.6rem;
@@ -3263,7 +3263,7 @@ footer{
                     transition: all .4s;
                     &:hover{
                         opacity: .7;
-                    }          
+                    }
                 }
                 @include mq('sp-down'){
                   &:last-child{
@@ -3310,7 +3310,7 @@ footer{
                     transition: all .4s;
                     &:hover{
                         opacity: .7;
-                    }          
+                    }
                 }
             }
             .tel{
@@ -3331,7 +3331,7 @@ footer{
                     color: white;
                 }
                 @include mq('sp-up'){
-                    pointer-events: none;        
+                    pointer-events: none;
                 }
             }
             .lesson{
@@ -3508,7 +3508,7 @@ div.ui-datepicker{
         .txt-wrapper{
           padding-top: 1.2rem;
           time{
-          
+
               font-size: 1.5rem;
               font-weight: 300;
               color: $c-green;
@@ -3599,166 +3599,14 @@ div.ui-datepicker{
         color: $c-main;
         font-weight: bold;
         text-align: center;
-      
+
         @include mq('sp-down'){
           font-size: 2rem;
         }
       }
     }
     .content{
-      img{
-          width: 100%;
-          margin-bottom: 2rem;
-      }
-      p{
-          padding-bottom: 3rem;
-          font-size: 1.8rem;
-          line-height: normal;
-          @include mq('sp-down'){
-            padding-bottom: 3rem;
-          }
-          span,strong,a{
-              font-size: 1em;
-          }
-      }
-      .is-type-video{
-          iframe{
-              width: 100%;
-              height: 100%;
-              aspect-ratio: 16 / 9;
-          }
-      }
-      h1{
-        font-size: 3.4rem;
-        font-weight: bold;
-        color: $c-green;
-        position: relative;
-        line-height: normal;
-        margin-bottom: 2rem;
-        border-bottom: 2px solid $c-green;
-        @include mq('sp-down'){
-          font-size: 2.4rem;
-          margin-bottom: 2rem;
-        }
-    }
-      h2{
-          font-size: 3rem;
-          font-weight: bold;
-          color: $c-green;
-          padding-left: 1.7rem;
-          position: relative;
-          line-height: normal;
-          margin-bottom: 2rem;
-          &::before{
-              content: "";
-              width: .5rem;
-              height: 100%;
-              position: absolute;
-              background-color: $c-green;
-              left: 0;
-              top: 0;
-          }
-          @include mq('sp-down'){
-            font-size: 2.4rem;
-            margin-bottom: 2rem;
-          }
-      }
-      h3{
-          font-size: 2.4rem;
-          padding-left: 4rem;
-          position: relative;
-          margin-bottom: 2rem;
-          color: $c-green;
-          line-height: normal;
-          font-weight: bold;
-          &::before{
-              content: "";
-              height: .2rem;
-              width: 3rem;
-              position: absolute;
-              top: calc(50% - .1rem);
-              left: 0;
-              background-color: $c-green;
-          }
-          @include mq('sp-down'){
-            font-size: 2.2rem;
-            margin-bottom: 2rem;
-          }
-      }
-      h4{
-          font-size: 2.2rem;
-          position: relative;
-          margin-bottom: 1.6rem;
-          color: $c-green;
-          line-height: normal;
-          font-weight: bold;
-          @include mq('sp-down'){
-            font-size: 2rem;
-            margin-bottom: 1.6rem;
-          }
-      }
-      h5{
-          font-size: 2rem;
-          position: relative;
-          line-height: normal;
-          margin-bottom: 1.6rem;
-          color: $c-green;
-          font-weight: bold;
-          @include mq('sp-down'){
-            font-size: 1.8rem;
-            margin-bottom: 1.6rem;
-          }
-      }
-      h6{
-          font-size: 1.8rem;
-          position: relative;
-          line-height: normal;
-          margin-bottom: .16rem;
-          color: $c-green;
-          font-weight: bold;
-          @include mq('sp-down'){
-            font-size: 1.6rem;
-            margin-bottom: 1.6rem;
-          }
-      }
-      strong{
-          font-weight: bold;
-      }
-      a{
-          text-decoration: underline;
-          color: blue;
-      }
-      ul{
-          margin-bottom: 2rem;
-          li{
-              font-size: 1.8rem;
-              line-height: normal;
-              position: relative;
-              padding-left: 1em;
-              @include mq('sp-down'){
-                font-size: 1.4rem;
-              }
-              &::before{
-                  content: "・";
-                  left: 0;
-                  top: 0;
-                  position: absolute;
-              }
-          }
-      }
-      ol{
-          margin-bottom: 2rem;
-          list-style-type: decimal;
-          margin-left: 2em;
-          li{
-              list-style: decimal;
-              font-size: 1.8rem;
-              line-height: normal;
-              @include mq('sp-down'){
-                font-size: 1.4rem;
-              }
-          }
-      }
+
     }
   }
 }

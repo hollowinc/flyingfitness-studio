@@ -3,12 +3,12 @@
 //基本設定
 function my_setup()
 {
- add_theme_support('post-thumbnails'); 
- add_theme_support('automatic-feed-links'); 
- add_theme_support('title-tag'); 
+ add_theme_support('post-thumbnails');
+ add_theme_support('automatic-feed-links');
+ add_theme_support('title-tag');
  add_theme_support(
    'html5',
-   array( 
+   array(
      'search-form',
      'comment-form',
      'comment-list',
@@ -41,7 +41,7 @@ add_filter( 'upload_mimes', 'add_file_types_to_uploads' );
 //認証なしで管理者メアド変更できるようにする
 remove_action( 'add_option_new_admin_email', 'update_option_new_admin_email' );
 remove_action( 'update_option_new_admin_email', 'update_option_new_admin_email' );
-  
+
 function wpdocs_update_option_new_admin_email( $old_value, $value ) {
     update_option( 'admin_email', $value );
 }
@@ -53,8 +53,8 @@ add_action( 'update_option_new_admin_email', 'wpdocs_update_option_new_admin_ema
 function post_has_archive($args, $post_type)
 {
    if ('post' == $post_type) {
-       $args['rewrite'] = true; 
-       $args['has_archive'] = 'topics'; 
+       $args['rewrite'] = true;
+       $args['has_archive'] = 'topics';
    }
    return $args;
 }
@@ -69,3 +69,6 @@ function remove_menus() {
   remove_menu_page( 'edit-comments.php' ); // コメント.
 }
 add_action( 'admin_menu', 'remove_menus', 999 );
+
+// エディタにcss表示
+add_editor_style(array('../studio_com/assets/css/common/editor.css')); //サイトオリジナル
