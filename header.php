@@ -16,6 +16,17 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
     </script>
+	<style>
+		@media (max-width: 767px) {
+			.header {
+				position: absolute;
+			}
+			
+			.right-cta a {
+				padding: 1.3rem 4px;	
+			}
+		}
+	</style>
 </head>
 
 <body <?php body_class(); ?> id="body">
@@ -83,8 +94,12 @@
             <p>電話</p>
         </a>
         <a href="#contact" class="mail">
+			<!-- 
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/cta-mail.svg">
-            <p>メ<span>ー</span>ル</p>
+            <p>メ<span>ー</span>ル</p>
+			-->
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/header-lesson.svg">
+			<p>体験<br>レッスン</p>
         </a>
         <a href="https://reserva.be/studiocom" class="member" target="_blank" rel="noopener noreferrer">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/cta-member.svg">

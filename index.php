@@ -135,7 +135,7 @@
                 <div class="members">
                     <h5>会員様</h5>
                     <div class="txt">
-                        <p class="ttl">今月のスケジュール、<br class="sp-show">ご予約はこちら</p>
+                        <p class="ttl">ご予約はこちら</p>
                         <p class="desc">予約は、パソコン、携帯のウェブ上から<br class="sp-show">受け付けております。</p>
                         <a href="https://reserva.be/studiocom" class="btn" target="_blank" rel="noopener noreferrer">
                             予約する
@@ -424,8 +424,8 @@
     </section>
     <section class="fv">
         <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp" media="(min-width: 768px)" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp" class="fv-bg" alt="Studio.com">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp?ver2" media="(min-width: 768px)" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp?ver2" class="fv-bg" alt="Studio.com">
         </picture>
 
 
@@ -1002,7 +1002,7 @@
                 <h2>Access</h2>
                 <h6>アクセス</h6>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.6684186362927!2d136.7093655!3d35.4382431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003ac532b0abe27%3A0xd270991081fa4ad8!2z44CSNTAxLTExNTEg5bKQ6Zic55yM5bKQ6Zic5biC5bed6YOo77yS5LiB55uuIOOCouOCr-OCouODrOOCrOODvOODrA!5e0!3m2!1sja!2sjp!4v1732077438569!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.6699529384823!2d136.70930909999998!3d35.43820509999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003adf25d728d5b%3A0x9d2b1664ffa290c0!2z44K544K_44K444Kq44OJ44OD44OI44Kz44Og!5e0!3m2!1sja!2sjp!4v1735358096371!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="detail">
                 <p class="tenpo">尻毛店</p>
                 <p>

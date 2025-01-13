@@ -3,8 +3,8 @@
 
     <section class="fv kaso-fv">
         <picture>
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp" media="(min-width: 768px)" />
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp" class="fv-bg" alt="Studio.com">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp?ver2" media="(min-width: 768px)" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/kaso-fv.webp?ver2" class="fv-bg" alt="Studio.com">
         </picture>
         <div class="kaso-fv__inner">
           <h6>Topics</h6>
