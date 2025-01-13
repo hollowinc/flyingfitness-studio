@@ -854,67 +854,81 @@ main{
                   left: -1rem;
                 }
             }
-            &__inner{
+            &__inner {
                 max-width: 57.6rem;
                 margin: auto;
-            }
-            font-size: 2.4rem;
-            h1,h2,h3,h4,h5,h6{
+                font-size: 2.4rem;
+
+              p{
+                strong{
+                    font-size: 1em;
+                    font-weight: bold;
+                }
+              }
+
+              h1,h2,h3,h4,h5,h6{
                 strong{
                     font-size: 1em;
                     color: $c-red2;
                     text-decoration: underline;
                 }
+              }
+              h6{
+                  text-align: center;
+                  margin-bottom: 3.2rem;
+                  span{
+                      background-color: $c-gold;
+                      color: white;
+                      display: inline-block;
+                      font-size: 2.5rem;
+                      font-weight: bold;
+                      padding-left: 2rem;
+                      padding-right: 2rem;
+                      padding-top: 1.3rem;
+                      padding-bottom: .9rem;
+                      position: relative;
+                      br{
+                          display: none;
+                          @include mq('sp-down'){
+                              display: block;
+                          }
+                      }
+                      @include mq('sp-down'){
+                        font-size: 2rem;
+                        line-height: 1.4em;
+                      }
+                      &::before{
+                          content: "";
+                          width: 2rem;
+                          height: 2rem;
+                          position: absolute;
+                          background-image: url(../../img/common/gold-fukidashi.svg);
+                          background-size: contain;
+                          background-repeat: no-repeat;
+                          background-position: top center;
+                          left: 5rem;
+                          bottom: -2rem;
+                      }
+                  }
+              }
+              h2{
+                  color: $c-red;
+                  font-size: 5rem;
+                  letter-spacing: 0.03em;
+                  font-weight: bold;
+                  margin-bottom: 3.7rem;
+                  @include mq('sp-down'){
+                    font-size: 2.6rem;
+                    margin-bottom: 2rem;
+                  }
+              }
             }
-            h6{
-                text-align: center;
-                margin-bottom: 3.2rem;
-                span{
-                    background-color: $c-gold;
-                    color: white;
-                    display: inline-block;
-                    font-size: 2.5rem;
-                    font-weight: bold;
-                    padding-left: 2rem;
-                    padding-right: 2rem;
-                    padding-top: 1.3rem;
-                    padding-bottom: .9rem;
-                    position: relative;
-                    br{
-                        display: none;
-                        @include mq('sp-down'){
-                            display: block;
-                        }
-                    }
-                    @include mq('sp-down'){
-                      font-size: 2rem;
-                      line-height: 1.4em;
-                    }
-                    &::before{
-                        content: "";
-                        width: 2rem;
-                        height: 2rem;
-                        position: absolute;
-                        background-image: url(../../img/common/gold-fukidashi.svg);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: top center;
-                        left: 5rem;
-                        bottom: -2rem;
-                    }
-                }
+
+            &__inner-normal{
+              max-width: 57.6rem;
+              margin: auto;
             }
-            h2{
-                color: $c-red;
-                font-size: 5rem;
-                letter-spacing: 0.03em;
-                font-weight: bold;
-                margin-bottom: 3.7rem;
-                @include mq('sp-down'){
-                  font-size: 2.6rem;
-                  margin-bottom: 2rem;
-                }
-            }
+
             .banner{
                 padding-bottom: 4rem;
                 @include mq('sp-down'){
@@ -922,12 +936,6 @@ main{
                 }
                 img{
                     width: 100%;
-                }
-            }
-            p{
-                strong{
-                    font-size: 1em;
-                    font-weight: bold;
                 }
             }
             .big{

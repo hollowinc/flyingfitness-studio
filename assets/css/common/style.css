@@ -1186,7 +1186,6 @@ main {
   border-radius: 4rem;
   background-color: #fff;
   margin-bottom: 3rem;
-  font-size: 2.4rem;
 }
 @media (max-width: 767px) {
   .campaign__inner .box {
@@ -1213,17 +1212,22 @@ main {
 .campaign__inner .box__inner {
   max-width: 57.6rem;
   margin: auto;
+  font-size: 2.4rem;
 }
-.campaign__inner .box h1 strong, .campaign__inner .box h2 strong, .campaign__inner .box h3 strong, .campaign__inner .box h4 strong, .campaign__inner .box h5 strong, .campaign__inner .box h6 strong {
+.campaign__inner .box__inner p strong {
+  font-size: 1em;
+  font-weight: bold;
+}
+.campaign__inner .box__inner h1 strong, .campaign__inner .box__inner h2 strong, .campaign__inner .box__inner h3 strong, .campaign__inner .box__inner h4 strong, .campaign__inner .box__inner h5 strong, .campaign__inner .box__inner h6 strong {
   font-size: 1em;
   color: #a50101;
   text-decoration: underline;
 }
-.campaign__inner .box h6 {
+.campaign__inner .box__inner h6 {
   text-align: center;
   margin-bottom: 3.2rem;
 }
-.campaign__inner .box h6 span {
+.campaign__inner .box__inner h6 span {
   background-color: #c1aa6a;
   color: white;
   display: inline-block;
@@ -1235,21 +1239,21 @@ main {
   padding-bottom: 0.9rem;
   position: relative;
 }
-.campaign__inner .box h6 span br {
+.campaign__inner .box__inner h6 span br {
   display: none;
 }
 @media (max-width: 767px) {
-  .campaign__inner .box h6 span br {
+  .campaign__inner .box__inner h6 span br {
     display: block;
   }
 }
 @media (max-width: 767px) {
-  .campaign__inner .box h6 span {
+  .campaign__inner .box__inner h6 span {
     font-size: 2rem;
     line-height: 1.4em;
   }
 }
-.campaign__inner .box h6 span::before {
+.campaign__inner .box__inner h6 span::before {
   content: "";
   width: 2rem;
   height: 2rem;
@@ -1261,7 +1265,7 @@ main {
   left: 5rem;
   bottom: -2rem;
 }
-.campaign__inner .box h2 {
+.campaign__inner .box__inner h2 {
   color: #e1185d;
   font-size: 5rem;
   letter-spacing: 0.03em;
@@ -1269,10 +1273,14 @@ main {
   margin-bottom: 3.7rem;
 }
 @media (max-width: 767px) {
-  .campaign__inner .box h2 {
+  .campaign__inner .box__inner h2 {
     font-size: 2.6rem;
     margin-bottom: 2rem;
   }
+}
+.campaign__inner .box__inner-normal {
+  max-width: 57.6rem;
+  margin: auto;
 }
 .campaign__inner .box .banner {
   padding-bottom: 4rem;
@@ -1284,10 +1292,6 @@ main {
 }
 .campaign__inner .box .banner img {
   width: 100%;
-}
-.campaign__inner .box p strong {
-  font-size: 1em;
-  font-weight: bold;
 }
 .campaign__inner .box .big p {
   text-align: center;
