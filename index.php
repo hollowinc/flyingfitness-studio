@@ -439,7 +439,7 @@
             </div>
             <ul>
                 <li>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/inst1.webp" alt="Mayu">
+                    <img src="<?php echo home_url() ?>/wp-content/uploads/2025/01/inst1.png" alt="Mayumi">
                     <div class="txt">
                         <p class="desc">歯科衛生士として仕事をしてきて結婚、出産し、子供も少し手が離れ自分を見つめる時、出逢ったのがこのAntiGravity®でした。 輝いて笑顔でいたいです！ そして出逢いに感謝！！</p>
                         <div class="bg-blue">
@@ -449,7 +449,7 @@
                 </li>
 
                 <li>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lp2/inst2.webp" alt="Yuki!ko">
+                    <img src="<?php echo home_url() ?>/wp-content/uploads/2025/01/inst2.png" alt="Yuk!ko">
                     <div class="txt">
                         <p class="desc">
                             歯科技工士・医療事務・登録販売者・ZUMBAインストラクター。
@@ -652,6 +652,23 @@
                             <p>
                                 ヨガをされる方・興味を持たれた方の日常が穏やかで輝かしいものになるべく、ヨガはその一翼を担うものだと考えます。
                                 <br>スタジオドットコムのレッスンを通して、心身を整え、毎日を楽しみ、輝かせていきましょう！
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <img src="<?php echo home_url() ?>/wp-content/uploads/2025/01/inst12.png" alt="Yuri">
+                    <div class="txt">
+                        <p class="desc">
+                            新しいことに挑戦してみようと思い AntiGravity®fitnessへ。<br>
+                            初めてハンモックに包まれた時の気持ち良さは 今でも忘れません。<br>
+                            皆様にもAntiGravity®fitnessの良さを体験して頂けるように。<br>
+                        </p>
+                        <div class="bg-blue">
+                            <p>
+                                身体、心、呼吸 ハンモックだから感じられる特別な感覚を味わって頂けるように<br>
+                                自分の身体を知り、変えていく、変わる喜びをAntiGravity®で感じませんか？
                             </p>
                         </div>
                     </div>
